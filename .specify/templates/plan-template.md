@@ -31,7 +31,38 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+**Security-First Development** (NON-NEGOTIABLE):
+- [ ] Private keys/mnemonics isolated to USB secure zone
+- [ ] Sensitive data encrypted with Argon2id + AES-256-GCM
+- [ ] Multi-factor authentication (App password + Wallet password)
+- [ ] API credentials isolated to arcsign_api_service proxy
+- [ ] Logs sanitized (no passwords, keys, addresses, amounts)
+- [ ] All secrets via environment variables/OS Secret Store
+
+**Test-Driven Development** (NON-NEGOTIABLE):
+- [ ] Red-Green-Refactor cycle enforced
+- [ ] Unit + Integration + Contract tests planned
+- [ ] Security tests for security-sensitive features
+
+**Incremental Progress**:
+- [ ] Feature broken into 3-5 phases
+- [ ] Each phase is compilable, testable, revertible
+- [ ] Each commit is a runnable unit
+
+**Composition Over Inheritance**:
+- [ ] Interfaces and dependency injection preferred
+- [ ] Single responsibility per module
+- [ ] No over-abstraction
+
+**Documentation-Driven**:
+- [ ] SYSTEM_SPECIFICATION.md update planned
+- [ ] Architectural decisions documented
+- [ ] API contracts documented before implementation
+
+**Architecture**:
+- [ ] MVC separation (Model/View/Controller layers)
+- [ ] Backend-first approach (Go)
+- [ ] API-first design for future frontend-backend separation
 
 ## Project Structure
 
