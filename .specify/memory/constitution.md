@@ -102,11 +102,13 @@ The project MUST follow MVC (Model-View-Controller) architectural separation:
 - **Controller Layer**: Request handling, input validation, and orchestration between Model and View.
 
 **Backend-First Approach**:
+
 - Backend API development takes priority.
 - Backend uses **Go** for performance, security, and strong typing.
 - Future architecture: Frontend-backend separation (API-first design).
 
 **API Service Isolation**:
+
 - External API credentials are managed exclusively by `arcsign_api_service` proxy.
 - Main system MUST NOT directly access or store third-party API keys.
 

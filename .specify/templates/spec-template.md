@@ -85,7 +85,7 @@
 ### Functional Requirements
 
 - **FR-001**: System MUST [specific capability, e.g., "allow users to create accounts"]
-- **FR-002**: System MUST [specific capability, e.g., "validate email addresses"]
+- **FR-002**: System MUST [specific capability, e.g., "validate email addresses"]  
 - **FR-003**: Users MUST be able to [key interaction, e.g., "reset their password"]
 - **FR-004**: System MUST [data requirement, e.g., "persist user preferences"]
 - **FR-005**: System MUST [behavior, e.g., "log all security events"]
@@ -94,16 +94,6 @@
 
 - **FR-006**: System MUST authenticate users via [NEEDS CLARIFICATION: auth method not specified - email/password, SSO, OAuth?]
 - **FR-007**: System MUST retain user data for [NEEDS CLARIFICATION: retention period not specified]
-
-### Security Requirements (if applicable)
-
-*Include this section for features handling sensitive data, authentication, or cryptographic operations*
-
-- **SR-001**: System MUST encrypt sensitive data using Argon2id + AES-256-GCM
-- **SR-002**: Private keys/mnemonics MUST remain isolated to USB secure zone
-- **SR-003**: API credentials MUST be isolated to arcsign_api_service proxy
-- **SR-004**: Logs MUST NOT contain sensitive information (passwords, keys, addresses, amounts)
-- **SR-005**: All secrets MUST use environment variables or OS Secret Store
 
 ### Key Entities *(include if feature involves data)*
 
